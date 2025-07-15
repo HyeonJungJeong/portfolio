@@ -1,0 +1,89 @@
+
+
+#main > .wrapper > #one > .container > .introduction > .box {
+    top: 55%;
+    left: 50%;
+    width: 20rem;
+    height: 20rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 0.125rem 2rem #00000015;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: 0;
+    z-index: 0;
+}
+
+#main > .wrapper > #one > .container > .introduction > .box::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ee88aa, #ddeeff00 80%, #ffffff80);
+    content: '';
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+}
+
+#main > .wrapper > #one > .container > .introduction > .box > .wave {
+    bottom: 20%;
+    left: 50%;
+    width: 200%;
+    aspect-ratio: 1/1;
+    animation-name: animation-wave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 43%;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-50%);
+    transform-origin: 0;
+    z-index: -2;
+}
+
+/* animation-duration 값은 파도 효과를 위해 다소 무작위적으로 가지고갈 필요가 있고 각 wave 마다 다르게 설정하여야 함 */
+#main > .wrapper >#one > .container > .introduction > .box > .wave:nth-of-type(1) {
+    animation-duration: 5555ms;
+    background-color: #00aaff;
+    opacity: 0.4;
+}
+
+#main > .wrapper >#one > .container > .introduction > .box > .wave:nth-of-type(2) {
+    animation-duration: 123456ms;
+    background-color: #faf015;
+    opacity: 0.2;
+}
+
+#main > .wrapper >#one > .container > .introduction > .box > .wave:nth-of-type(3) {
+    animation-duration: 7890ms;
+    background-color: #00aaff;
+    opacity: 0.4;
+}
+
+/* border-radius 값은 파도 효과를 위해 다소 무작위적으로 가지고갈 필요가 있음 */
+@keyframes animation-wave {
+    0% {
+        border-radius: 43%;
+        transform: rotateZ(0deg) translateX(-50%);
+    }
+
+    25% {
+        border-radius: 37%;
+    }
+
+    50% {
+        border-radius: 41%;
+    }
+
+    75% {
+        border-radius: 36%;
+    }
+
+    100% {
+        border-radius: 43%;
+        transform: rotateZ(360deg) translateX(-50%);
+    }
+}

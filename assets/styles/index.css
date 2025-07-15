@@ -1,0 +1,544 @@
+@charset "UTF-8";
+
+@import "./header.css";
+@import "./footer.css";
+@import "./box.css";
+
+#main {
+    top: 0;
+    padding: 0;
+    background-color: #ffffff;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#main > .wrapper > #one {
+    background-color: #ffffff;
+    padding: 0.025rem;
+    position: relative;
+}
+
+#main > .wrapper > #one > .container > .head {
+    font-size: 3.5rem;
+    border-bottom: 0.0625rem solid #293947;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main > .wrapper > #one > .container > .introduction {
+
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    width: 90%;
+    cursor: pointer;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#main > .wrapper > #one > .container > .introduction > .name {
+    width: 30rem;
+    z-index: 1;
+
+}
+
+#main > .wrapper > #one > .container > .introduction > .profile {
+    color: transparent;
+    border-radius: 999rem;
+    padding-bottom: 0.5rem;
+    width: 10rem;
+    z-index: 1;
+}
+
+#main > .wrapper > #one > .container > .intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main > .wrapper > #one > .container > .intro > .caption {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    width: 50%;
+
+    background-color: #f2f8ed;
+    border-radius: 4rem;
+    box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1def;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+#main > .wrapper > #one > .container > .intro > .caption:hover {
+    box-shadow: 0.75rem 0.5rem 0.75rem #1f1d1def;
+}
+
+
+#main > .wrapper > #one > .container > .intro > .contents {
+    font-size: 1.2rem;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 4rem;
+    margin-left: 3rem;
+    margin-bottom: 15rem;
+    padding: 3rem;
+    text-align: center;
+
+    opacity: 1;
+    pointer-events: none;
+    position: relative;
+    transition-duration: 250ms;
+    transition-property: left, opacity;
+    transition-timing-function: ease;
+}
+
+
+#main > .wrapper > #two {
+
+    background-color: #90cbfb;
+
+    padding: 0.025rem;
+    position: relative;
+
+}
+
+#main > .wrapper > #two > .container > .head {
+    font-size: 3.5rem;
+    border-bottom: 0.0625rem solid #293947;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#main > .wrapper > #two > .container > p {
+    text-align: center;
+}
+
+#main > .wrapper > #two > .container > .contents {
+    padding: 5rem;
+}
+
+#main > .wrapper > #two > .container > .contents > .list {
+    width: 100%;
+}
+
+#main > .wrapper > #two > .container > .contents > .list > .item {
+    width: 10%;
+    display: inline-block;
+    position: relative;
+    border-radius: 1rem;
+    margin: 0.25rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1150af;
+}
+
+#main > .wrapper > #two > .container > .contents > .list > .item > img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+
+    filter: brightness(0.8);
+    transform: scale(1);
+    transform-origin: center;
+    transition-duration: 500ms;
+    transition-property: filter, transform;
+    transition-timing-function: ease;
+}
+
+#main > .wrapper > #two > .container > .contents > .list > .item:hover > img {
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
+#main > .wrapper > #two > .container > .contents > strong {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+
+#main > .wrapper > #three {
+    background-color: #efefe8;
+
+    position: relative;
+    padding-bottom: 15rem;
+}
+
+#main > .wrapper > #three > .container > .head {
+    font-size: 3.5rem;
+    border-bottom: 0.0625rem solid #293947;
+    padding-bottom: 1rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main > .wrapper > #three > .container > .contents {
+    padding: 4rem;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature {
+    width: 90%;
+    background-color: #f1cbcda5;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1d;
+    position: relative;
+    margin-bottom: 3rem;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 250ms;
+    transition-property: left, opacity;
+    transition-timing-function: ease;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature:hover {
+    box-shadow: 0.75rem 0.5rem 0.75rem #1f1d1de3;
+
+}
+
+#main > .wrapper > #three > .container > .contents > .stretch {
+    flex-grow: 1;
+    width: 10%;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature > a > img {
+    width: 50%;
+
+    display: inline-block;
+    position: relative;
+    padding-left: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+#main > .wrapper > #three > .container > .contents > .feature > .caption {
+    top: -2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 3rem;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature > .port {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    position: absolute;
+    padding-left: 3rem;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: flex-start;
+
+}
+
+#main > .wrapper > #three > .container > .contents > .feature > a {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature > a > .skills > .skill {
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+
+    border-radius: 1rem;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main > .wrapper > #four {
+    background-color: #b6c9b8;
+
+    position: relative;
+    padding-bottom: 15rem;
+}
+
+#main > .wrapper > #four > .container > .head {
+    font-size: 3.5rem;
+    border-bottom: 0.0625rem solid #293947;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main > .wrapper > #four > .container > .contents {
+    padding: 4rem;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature {
+    background-color: #90cbfba5;
+    width: 90%;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1d;
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 0.5rem;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 250ms;
+    transition-property: left, opacity;
+    transition-timing-function: ease;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature:hover {
+    box-shadow: 0.75rem 0.5rem 0.75rem #1f1d1de3;
+
+
+}
+
+#main > .wrapper > #four > .container > .contents > .stretch {
+    flex-grow: 1;
+    width: 10%;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > a > img {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    border-radius: 1rem;
+}
+
+
+#main > .wrapper > #four > .container > .contents > .feature > .caption {
+    top: 0;
+    font-size: 3rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 3rem;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > .career {
+    font-size: 1.5rem;
+    position: absolute;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    padding-left: 3rem;
+
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > a {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > a > .skills > .skill {
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+
+    border-radius: 1rem;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 100rem) {
+
+    #main > .wrapper > #two > .container > .contents > .list > .item {
+        scale: 90%;
+    }
+}
+
+/* 화면의 가로 크기가 80rem 이하일때만 적용할 선택자 */
+@media screen and (max-width: 80rem) {
+
+    #main > .wrapper > #two > .container > .contents > .list > .item {
+        scale: 80%;
+    }
+}
+
+/* 화면의 가로 크기가 60rem 이하일때만 적용할 선택자 */
+@media screen and (max-width: 60rem) {
+
+    #main > .wrapper > #two > .container > .contents > .list > .item {
+        width: 20%;
+        scale: 70%;
+    }
+
+    #main > .wrapper > #two > .container > .contents > .list > .item > .img {
+        scale: 60%;
+    }
+}
+
+/* 화면의 가로 크기가 40rem 이하일때만 적용할 선택자 */
+@media screen and (max-width: 40rem) {
+
+    #main > .wrapper > #two > .container > .contents > .list > .item {
+        width: 20%;
+        scale: 60%;
+    }
+
+    #main > .wrapper > #two > .container > .contents > .list > .item > .img {
+        scale: 40%;
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    #main > .wrapper > #three > .container > .contents > .feature > .caption {
+        top: -0.5rem;
+        left: 0.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    #main > .wrapper > #three > .container > .contents > .feature > .port {
+        top: 80%;
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    #main > .wrapper > #three > .container > .contents > .feature > a > .skills > .skill {
+        scale: 75%;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    #main > .wrapper > #three > .container > .contents > .feature > .caption {
+        top: 0;
+        padding-left: 1rem;
+        left: -1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    #main > .wrapper > #three > .container > .contents > .feature > .port {
+        top: 60%;
+        width: 90%;
+        padding-left: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    #main > .wrapper > #three > .container > .contents > .feature > a > .skills > .skill {
+        scale: 50%;
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    #main > .wrapper > #four > .container > .contents > .feature > .caption {
+        top: -0.5rem;
+        left: 0.5rem;
+
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    #main > .wrapper > #four > .container > .contents > .feature > .career {
+        top: 80%;
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    #main > .wrapper > #four > .container > .contents > .feature > a > .skills > .skill {
+        scale: 75%;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    #main > .wrapper > #four > .container > .contents > .feature {
+        scale: 1.2;
+        width: 100%;
+    }
+
+    #main > .wrapper > #four > .container > .contents > .feature > .caption {
+        top: 0;
+        padding-left: 1rem;
+        left: -1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    #main > .wrapper > #four > .container > .contents > .feature > .career {
+        top: 70%;
+        width: 90%;
+        padding-left: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    #main > .wrapper > #four > .container > .contents > .feature > a > .skills > .skill {
+        scale: 50%;
+    }
+}

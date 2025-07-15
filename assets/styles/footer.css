@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#footer {
+    background-color: #293947;
+    color: #f2f8ed;
+
+    padding: 1rem;
+    position: relative;
+}
+
+#footer > .contact {
+    padding: 2rem;
+}
+
+#footer > .contact > .list > .intro {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+
+#footer > .copy-right {
+    padding-bottom: 2rem;
+
+    text-align: center;
+}
+
+@media screen and (max-width: 40rem) {
+    #footer {
+        width: 98%;
+    }
+}
