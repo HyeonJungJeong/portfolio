@@ -266,7 +266,7 @@
 }
 
 #main > .wrapper > #three > .container > .contents > .feature > .card > .content > a:hover {
-    scale: 110%;
+    scale: 105%;
 }
 
 #main > .wrapper > #three > .container > .contents > .feature > .card > .content > a > img {
@@ -378,6 +378,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+    cursor: pointer;
 }
 
 #main > .wrapper > #four > .container > .contents > .stretch {
@@ -400,7 +401,6 @@
     font-weight: 500;
     position: relative;
     padding: 1.5rem;
-    cursor: pointer;
 }
 
 #main > .wrapper > #four > .container > .contents > .feature > .feature-label > .caption img {
