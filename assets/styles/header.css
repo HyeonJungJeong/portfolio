@@ -5,12 +5,12 @@
     left: 0;
     width: 100%;
 
-    border-bottom: 0.0625rem solid #e5e7eb;
+    border-bottom: 0.0625rem solid #000000;
     padding: 1.25rem;
     position: fixed;
     z-index: 3;
-    background-color: #1f1d1d;
-    color: #e5e7eb;
+    background-color: #b6c9b8;
+    color: #000000;
 }
 
 #header > .layout-content {

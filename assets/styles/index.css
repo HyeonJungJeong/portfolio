@@ -3,29 +3,35 @@
 @import "./header.css";
 @import "./footer.css";
 @import "./box.css";
+@import "./common.css";
+@import "./modal.css";
 
 #main {
     top: 0;
-    padding: 0;
+    left: 0;
     background-color: #ffffff;
     width: 100%;
+    height: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #main > .wrapper > #one {
-    background-color: #ffffff;
+    background-color: #f0f8ff;
     padding: 0.025rem;
     position: relative;
 }
 
+#main > .wrapper > #one > .container {
+    width: 100%;
+}
+
 #main > .wrapper > #one > .container > .head {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     border-bottom: 0.0625rem solid #293947;
-    padding-bottom: 1rem;
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -37,11 +43,8 @@
     font-size: 2rem;
     font-weight: 400;
     position: relative;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    margin-left: 3rem;
-    width: 90%;
-    cursor: pointer;
+    width: 100%;
+    height: 20rem;
 
     align-items: center;
     display: flex;
@@ -50,16 +53,16 @@
     text-align: center;
 }
 
-#main > .wrapper > #one > .container > .introduction > .name {
+#main > .wrapper > #one > .container > .introduction > .box > .name {
     width: 30rem;
     z-index: 1;
 
+    padding-top: 1rem;
 }
 
-#main > .wrapper > #one > .container > .introduction > .profile {
+#main > .wrapper > #one > .container > .introduction > .box > .profile {
     color: transparent;
     border-radius: 999rem;
-    padding-bottom: 0.5rem;
     width: 10rem;
     z-index: 1;
 }
@@ -78,13 +81,12 @@
     position: relative;
     width: 50%;
 
-    background-color: #f2f8ed;
+    background-color: #b6c9b8;
     border-radius: 4rem;
     box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1def;
     text-align: center;
     padding: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 #main > .wrapper > #one > .container > .intro > .caption:hover {
@@ -94,13 +96,12 @@
 
 #main > .wrapper > #one > .container > .intro > .contents {
     font-size: 1.2rem;
-    display: flex;
-    background-color: #ffffff;
+    display: block;
+    background-color: #f0f8ff;
     border-radius: 4rem;
-    margin-left: 3rem;
-    margin-bottom: 15rem;
-    padding: 3rem;
+    margin-top: 2rem;
     text-align: center;
+    padding-bottom: 1rem;
 
     opacity: 1;
     pointer-events: none;
@@ -108,12 +109,13 @@
     transition-duration: 250ms;
     transition-property: left, opacity;
     transition-timing-function: ease;
+    width: 80%;
 }
 
 
 #main > .wrapper > #two {
 
-    background-color: #90cbfb;
+    background-color: #f0f8ff;
 
     padding: 0.025rem;
     position: relative;
@@ -121,10 +123,9 @@
 }
 
 #main > .wrapper > #two > .container > .head {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     border-bottom: 0.0625rem solid #293947;
-    padding-bottom: 1rem;
-    padding-top: 4rem;
+    border-top: 0.0625rem solid #293947;
 
     align-items: center;
     display: flex;
@@ -138,28 +139,37 @@
 }
 
 #main > .wrapper > #two > .container > .contents {
-    padding: 5rem;
+    padding: 1rem;
 }
 
 #main > .wrapper > #two > .container > .contents > .list {
     width: 100%;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #main > .wrapper > #two > .container > .contents > .list > .item {
-    width: 10%;
+    width: 3rem;
     display: inline-block;
     position: relative;
     border-radius: 1rem;
-    margin: 0.25rem;
+    box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1def;
+    padding: 1rem;
     text-align: center;
-    color: #ffffff;
-    background-color: #1150af;
+    color: #1f1d1d;
+    background-color: #b6c9b8;
+    margin: 1rem;
+}
+
+#main > .wrapper > #two > .container > .contents > .list > .item:hover {
+    box-shadow: 0.75rem 0.5rem 0.75rem #1f1d1def;
 }
 
 #main > .wrapper > #two > .container > .contents > .list > .item > img {
     width: 3rem;
     height: 3rem;
-    margin: 0.5rem;
 
     filter: brightness(0.8);
     transform: scale(1);
@@ -177,23 +187,25 @@
 #main > .wrapper > #two > .container > .contents > strong {
     font-size: 2rem;
     font-weight: 500;
-    padding-top: 1.5rem;
-    text-align: left;
-    display: inline-block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
     position: relative;
+    text-align: center;
 }
 
 #main > .wrapper > #three {
-    background-color: #efefe8;
+    background-color: #f0f8ff;
 
     position: relative;
     padding-bottom: 15rem;
 }
 
 #main > .wrapper > #three > .container > .head {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     border-bottom: 0.0625rem solid #293947;
-    padding-bottom: 1rem;
+    border-top: 0.0625rem solid #293947;
 
     align-items: center;
     display: flex;
@@ -202,65 +214,80 @@
 }
 
 #main > .wrapper > #three > .container > .contents {
-    padding: 4rem;
     align-items: flex-start;
     display: flex;
-    flex-direction: column;
-    gap: 5rem;
+    flex-direction: row;
+    gap: 1rem;
     justify-content: space-between;
 }
 
 #main > .wrapper > #three > .container > .contents > .feature {
-    width: 90%;
-    background-color: #f1cbcda5;
+    width: 100%;
+    background-color: #b6c9b8;
     border-radius: 2rem;
     box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1d;
     position: relative;
-    margin-bottom: 3rem;
-    padding-bottom: 6rem;
-    padding-top: 2rem;
-
-    opacity: 0;
-    pointer-events: none;
-    transition-duration: 250ms;
-    transition-property: left, opacity;
-    transition-timing-function: ease;
+    padding: 1rem;
+    margin-top: 2rem;
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 
-#main > .wrapper > #three > .container > .contents > .feature.visible {
-    opacity: 1;
-    pointer-events: auto;
-}
 
 #main > .wrapper > #three > .container > .contents > .feature:hover {
     box-shadow: 0.75rem 0.5rem 0.75rem #1f1d1de3;
 
 }
 
-#main > .wrapper > #three > .container > .contents > .stretch {
-    flex-grow: 1;
-    width: 10%;
+#main > .wrapper > #three > .container > .contents > .feature > .card {
+    width: 30%;
+
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-#main > .wrapper > #three > .container > .contents > .feature > a > img {
-    width: 50%;
-
-    display: inline-block;
-    position: relative;
-    padding-left: 0.5rem;
+#main > .wrapper > #three > .container > .contents > .feature > .card > .content {
+    height: 10rem;
     border-radius: 1rem;
 }
 
-
-#main > .wrapper > #three > .container > .contents > .feature > .caption {
-    top: -2rem;
-    font-size: 3rem;
-    font-weight: 500;
-    position: relative;
-    padding-left: 3rem;
+#main > .wrapper > #three > .container > .contents > .feature > .card > .content > a {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
 }
 
-#main > .wrapper > #three > .container > .contents > .feature > .port {
+#main > .wrapper > #three > .container > .contents > .feature > .card > .content > a:hover {
+    scale: 110%;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature > .card > .content > a > img {
+    width: 50%;
+    height: 8rem;
+
+    display: inline-block;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+
+#main > .wrapper > #three > .container > .contents > .feature > .card > .caption {
+    height: 3rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+
+#main > .wrapper > #three > .container > .contents > .feature > .card > .content > .port {
     font-size: 1.5rem;
     margin-top: 1rem;
     position: absolute;
@@ -274,22 +301,16 @@
 
 }
 
-#main > .wrapper > #three > .container > .contents > .feature > a {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    justify-content: center;
-}
 
-#main > .wrapper > #three > .container > .contents > .feature > a > .skills > .skill {
+
+#main > .wrapper > #three > .container > .contents > .feature > .card > .content > a > .skills > .skill {
     cursor: pointer;
     background-color: #000000;
     color: #ffffff;
 
     margin-top: 0.25rem;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
 
     border-radius: 1rem;
 
@@ -300,15 +321,16 @@
 }
 
 #main > .wrapper > #four {
-    background-color: #b6c9b8;
+    background-color: #f0f8ff;
 
     position: relative;
     padding-bottom: 15rem;
 }
 
 #main > .wrapper > #four > .container > .head {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     border-bottom: 0.0625rem solid #293947;
+    border-top: 0.0625rem solid #293947;
 
     align-items: center;
     display: flex;
@@ -317,22 +339,21 @@
 }
 
 #main > .wrapper > #four > .container > .contents {
-    padding: 4rem;
+    padding: 2rem;
 
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     justify-content: space-between;
 }
 
 #main > .wrapper > #four > .container > .contents > .feature {
-    background-color: #90cbfba5;
+    background-color: #b6c9b8;
     width: 90%;
     border-radius: 3rem;
     box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1d;
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;;
     padding-left: 0.5rem;
     padding-bottom: 5rem;
     padding-top: 2rem;
@@ -395,6 +416,69 @@
     flex-direction: row;
     gap: 0.5rem;
     justify-content: center;
+    transition: max-height 0.3s ease;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #HRToggle:not(:checked) ~ .HR-link {
+    display: none;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > .toggle-btn img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: transform 0.2s ease;
+
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #HRToggle:checked ~ .career {
+    top: 80%;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #HRToggle:checked + .toggle-btn img {
+    transform: rotate(180deg); /* 선택 시 회전 효과 */
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #SaasToggle:not(:checked) ~ .Saas-link {
+    display: none;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > .toggle-btn img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: transform 0.2s ease;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #SaasToggle:checked ~ .career {
+    top: 80%;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #SaasToggle:checked + .toggle-btn img {
+    transform: rotate(180deg); /* 선택 시 회전 효과 */
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #platformToggle:not(:checked) ~ .platform-link {
+    display: none;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > .toggle-btn img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: transform 0.2s ease;
+
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #platformToggle:checked ~ .career {
+    top: 80%;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > #platformToggle:checked + .toggle-btn img {
+    transform: rotate(180deg); /* 선택 시 회전 효과 */
 }
 
 #main > .wrapper > #four > .container > .contents > .feature > a > .skills > .skill {
@@ -506,7 +590,7 @@
     }
 
     #main > .wrapper > #four > .container > .contents > .feature > .career {
-        top: 80%;
+        top: 50%;
         font-size: 1.25rem;
         font-weight: 300;
     }

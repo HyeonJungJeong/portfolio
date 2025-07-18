@@ -72,3 +72,101 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+let slideIndex = 0;
+
+function openERPModal() {
+    document.getElementById("ERP-modal").style.display = "block";
+    showERPSlides(slideIndex);
+}
+
+function closeERPModal() {
+    document.getElementById("ERP-modal").style.display = "none";
+    slideIndex = 0;
+}
+
+function plusERPSlides(n) {
+    showERPSlides(slideIndex += n);
+}
+
+function showERPSlides(n) {
+    let slides = document.getElementsByClassName("ERP-slide");
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+
+function openTAZAModal() {
+    document.getElementById("TAZA-modal").style.display = "block";
+    showTAZASlides(slideIndex);
+}
+
+function closeTAZAModal() {
+    document.getElementById("TAZA-modal").style.display = "none";
+    slideIndex = 0;
+}
+
+function plusTAZASlides(n) {
+    showTAZASlides(slideIndex += n);
+}
+
+function showTAZASlides(n) {
+    let slides = document.getElementsByClassName("TAZA-slide");
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+
+function openECSModal() {
+    document.getElementById("ECS-modal").style.display = "block";
+    showECSSlides(slideIndex);
+}
+
+function closeECSModal() {
+    document.getElementById("ECS-modal").style.display = "none";
+    slideIndex = 0;
+}
+
+function plusECSSlides(n) {
+    showECSSlides(slideIndex += n);
+}
+
+function showECSSlides(n) {
+    let slides = document.getElementsByClassName("ECS-slide");
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+
+function openESPModal() {
+    document.getElementById("ESP-modal").style.display = "block";
+    showESPSlides(slideIndex);
+}
+
+function closeESPModal() {
+    document.getElementById("ESP-modal").style.display = "none";
+    slideIndex = 0;
+}
+
+function plusESPSlides(n) {
+    showESPSlides(slideIndex += n);
+}
+
+function showESPSlides(n) {
+    let slides = document.getElementsByClassName("ESP-slide");
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}

@@ -1,10 +1,10 @@
 
 
 #main > .wrapper > #one > .container > .introduction > .box {
-    top: 55%;
+    top: 50%;
     left: 50%;
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: 0 0.125rem 2rem #00000015;
@@ -13,6 +13,11 @@
     transform: translate(-50%, -50%);
     transform-origin: 0;
     z-index: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 #main > .wrapper > #one > .container > .introduction > .box::after {

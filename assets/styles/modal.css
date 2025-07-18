@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+#main > .wrapper > #three > .ERP-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    height: 80%;
+
+
+
+    background-color: rgba(0,0,0,0.8);
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    transform: translate(-50%, -50%);
+
+}
+
+#main > .wrapper > #three > .ERP-modal > .modal-content {
+    position: relative;
+    max-width: 100rem;
+}
+
+#main > .wrapper > #three > .ERP-modal > .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#main > .wrapper > #three > .ERP-modal > .detail {
+    color: #e5e7eb;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#main > .wrapper > #three > .ERP-modal > .modal-content > .ERP-slide {
+    display: none;
+    width: 100%;
+}
+#main > .wrapper > #three > .ERP-modal > .modal-content > .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #000000;
+    padding: 16px;
+}
+#main > .wrapper > #three > .ERP-modal > .modal-content > .prev {
+    left: 0;
+}
+#main > .wrapper > #three > .ERP-modal > .modal-content > .next {
+    right: 0;
+}
+
+#main > .wrapper > #three > .TAZA-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    height: 80%;
+
+
+    background-color: rgba(0,0,0,0.8);
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    transform: translate(-50%, -50%);
+
+}
+
+#main > .wrapper > #three > .TAZA-modal > .modal-content {
+    position: relative;
+    max-width: 100rem;
+}
+
+#main > .wrapper > #three > .TAZA-modal > .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#main > .wrapper > #three > .TAZA-modal > .detail {
+    color: #e5e7eb;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#main > .wrapper > #three > .TAZA-modal > .modal-content > .TAZA-slide {
+    display: none;
+    width: 100%;
+}
+#main > .wrapper > #three > .TAZA-modal > .modal-content > .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #000000;
+    padding: 16px;
+}
+#main > .wrapper > #three > .TAZA-modal > .modal-content > .prev {
+    left: 0;
+}
+#main > .wrapper > #three > .TAZA-modal > .modal-content > .next {
+    right: 0;
+}
+
+#main > .wrapper > #three > .ESP-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    height: 80%;
+
+
+    background-color: rgba(0,0,0,0.8);
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    transform: translate(-50%, -50%);
+
+}
+
+#main > .wrapper > #three > .ESP-modal > .modal-content {
+    position: relative;
+    max-width: 100rem;
+}
+
+#main > .wrapper > #three > .ESP-modal > .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#main > .wrapper > #three > .ESP-modal > .detail {
+    color: #e5e7eb;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#main > .wrapper > #three > .ESP-modal > .modal-content > .ESP-slide {
+    display: none;
+    width: 100%;
+}
+#main > .wrapper > #three > .ESP-modal > .modal-content > .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #000000;
+    padding: 16px;
+}
+#main > .wrapper > #three > .ESP-modal > .modal-content > .prev {
+    left: 0;
+}
+#main > .wrapper > #three > .ESP-modal > .modal-content > .next {
+    right: 0;
+}
+
+#main > .wrapper > #three > .ECS-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    height: 80%;
+
+
+    background-color: rgba(0,0,0,0.8);
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    transform: translate(-50%, -50%);
+
+}
+
+#main > .wrapper > #three > .ECS-modal > .modal-content {
+    position: relative;
+    max-width: 100rem;
+}
+
+#main > .wrapper > #three > .ECS-modal > .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#main > .wrapper > #three > .ECS-modal > .detail {
+    color: #e5e7eb;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#main > .wrapper > #three > .ECS-modal > .modal-content > .ECS-slide {
+    display: none;
+    width: 100%;
+}
+#main > .wrapper > #three > .ECS-modal > .modal-content > .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #000000;
+    padding: 16px;
+}
+#main > .wrapper > #three > .ECS-modal > .modal-content > .prev {
+    left: 0;
+}
+#main > .wrapper > #three > .ECS-modal > .modal-content > .next {
+    right: 0;
+}
