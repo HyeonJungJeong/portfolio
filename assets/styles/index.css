@@ -341,27 +341,26 @@
 #main > .wrapper > #four > .container > .contents {
     padding: 2rem;
 
-    align-items: flex-start;
+    align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 1.5rem;
 }
 
 #main > .wrapper > #four > .container > .contents > .feature {
     background-color: #b6c9b8;
-    width: 90%;
+    width: 42%;
     border-radius: 3rem;
     box-shadow: 0.5rem 0.25rem 0.5rem #1f1d1d;
     position: relative;
-    margin-bottom: 3rem;;
-    padding-left: 0.5rem;
-    padding-bottom: 5rem;
-    padding-top: 2rem;
+
     opacity: 0;
     pointer-events: none;
     transition-duration: 250ms;
     transition-property: left, opacity;
     transition-timing-function: ease;
+
 }
 
 #main > .wrapper > #four > .container > .contents > .feature.visible {
@@ -371,8 +370,14 @@
 
 #main > .wrapper > #four > .container > .contents > .feature:hover {
     box-shadow: 0.75rem 0.5rem 0.75rem #1f1d1de3;
+}
 
-
+#main > .wrapper > #four > .container > .contents > .feature > .feature-label {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
 }
 
 #main > .wrapper > #four > .container > .contents > .stretch {
@@ -380,23 +385,30 @@
     width: 10%;
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > a > img {
+#main > .wrapper > #four > .container > .contents > .feature > .feature-label > .link > img {
     width: 50%;
     display: inline-block;
     position: relative;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 
-#main > .wrapper > #four > .container > .contents > .feature > .caption {
+#main > .wrapper > #four > .container > .contents > .feature > .feature-label > .caption {
     top: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     position: relative;
-    padding-left: 3rem;
+    padding: 1.5rem;
+    cursor: pointer;
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > .career {
+#main > .wrapper > #four > .container > .contents > .feature > .feature-label > .caption img {
+    text-align: center;
+    width: 4.5%;
+}
+
+#main > .wrapper > #four > .container > .contents > .feature > .feature-label > .career {
     font-size: 1.5rem;
     position: absolute;
 
@@ -405,83 +417,46 @@
     flex-direction: row;
     gap: 0.25rem;
     justify-content: flex-start;
-    margin-top: 1rem;
-    padding-left: 3rem;
+    margin-top: 1.25rem;
+    padding-left: 2rem;
 
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > a {
+#main > .wrapper > #four > .container > .contents > .feature > .feature-label > .link {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     justify-content: center;
     transition: max-height 0.3s ease;
+    width: 100%;
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > #HRToggle:not(:checked) ~ .HR-link {
+#main > .wrapper > #four > .container > .contents > .feature > .toggle:not(:checked) ~ .feature-label > .link {
     display: none;
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > .toggle-btn img{
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: transform 0.2s ease;
-
-}
-
-#main > .wrapper > #four > .container > .contents > .feature > #HRToggle:checked ~ .career {
-    top: 80%;
-}
-
-#main > .wrapper > #four > .container > .contents > .feature > #HRToggle:checked + .toggle-btn img {
-    transform: rotate(180deg); /* 선택 시 회전 효과 */
-}
-
-#main > .wrapper > #four > .container > .contents > .feature > #SaasToggle:not(:checked) ~ .Saas-link {
+#main > .wrapper > #four > .container > .contents > .feature > .toggle:not(:checked) ~ .feature-label > .career {
     display: none;
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > .toggle-btn img{
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: transform 0.2s ease;
+#main > .wrapper > #four > .container > .contents > .feature > .toggle:checked ~ .feature-label > .career {
+    top: 75%;
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > #SaasToggle:checked ~ .career {
-    top: 80%;
+#main > .wrapper > #four > .container > .contents > .feature > .toggle:checked + .feature-label > .caption img[alt="toggle"] {
+    transform: rotate(180deg);
+    /* 선택 시 회전 효과 */
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > #SaasToggle:checked + .toggle-btn img {
-    transform: rotate(180deg); /* 선택 시 회전 효과 */
+#main > .wrapper > #four > .container > .contents > .feature > .toggle:checked ~ .feature-label {
+    padding-bottom: 6rem;
+    transition-duration: 250ms;
+    transition-property: left, opacity;
+    transition-timing-function: ease;
 }
 
-#main > .wrapper > #four > .container > .contents > .feature > #platformToggle:not(:checked) ~ .platform-link {
-    display: none;
-}
-
-#main > .wrapper > #four > .container > .contents > .feature > .toggle-btn img{
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: transform 0.2s ease;
-
-}
-
-#main > .wrapper > #four > .container > .contents > .feature > #platformToggle:checked ~ .career {
-    top: 80%;
-}
-
-#main > .wrapper > #four > .container > .contents > .feature > #platformToggle:checked + .toggle-btn img {
-    transform: rotate(180deg); /* 선택 시 회전 효과 */
-}
-
-#main > .wrapper > #four > .container > .contents > .feature > a > .skills > .skill {
+#main > .wrapper > #four > .container > .contents > .feature > .feature-label > .link > .skills > .skill {
     cursor: pointer;
     background-color: #000000;
     color: #ffffff;
@@ -590,7 +565,7 @@
     }
 
     #main > .wrapper > #four > .container > .contents > .feature > .career {
-        top: 50%;
+        top: 40%;
         font-size: 1.25rem;
         font-weight: 300;
     }
@@ -616,7 +591,7 @@
 
     #main > .wrapper > #four > .container > .contents > .feature > .career {
         top: 70%;
-        width: 90%;
+        width: 50%;
         padding-left: 1rem;
         font-size: 1rem;
         font-weight: 300;
